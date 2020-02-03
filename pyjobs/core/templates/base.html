@@ -3,18 +3,18 @@
 <html>
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T2VF6PC');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Aqui seu novo emprego {{WEBSITE_WORKING_LANGUAGE}} acha você. Oportunidades para programadores {{WEBSITE_WORKING_LANGUAGE}} nas áreas de back-end, data scientists e outros devs. Receba até 10 ofertas para trabalhar como desenvolvedor." name="description"/>
     <meta name="description" content="Aqui é o portal onde você encontrará seu futuro emprego {{WEBSITE_WORKING_LANGUAGE}}. No {{WEBSITE_NAME}} vagas e pessoas especialistas em {{WEBSITE_WORKING_LANGUAGE}} não faltam! Somos a referência na linguagem em todo o país.">
     <title>{% if title %}{%block title%}{%endblock%}{%else%}{{WEBSITE_NAME}} - Sua central de vagas {{WEBSITE_WORKING_LANGUAGE}}{%endif%}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/img/favicons/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'assets/img/favicons/safari-pinned-tab.svg' %}" color="#777777">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <meta name="keywords" content="empregos, vagas, buscar vagas, vagas de emprego, vagas de programador {{WEBSITE_WORKING_LANGUAGE}}, emprego de programador {{WEBSITE_WORKING_LANGUAGE}}, empregos {{WEBSITE_WORKING_LANGUAGE}}, vagas {{WEBSITE_WORKING_LANGUAGE}}, buscar vagas {{WEBSITE_WORKING_LANGUAGE}}, vagas de emprego {{WEBSITE_WORKING_LANGUAGE}}">
     <meta name="twitter:description" content="Busque agora vagas de emprego de dev {{WEBSITE_WORKING_LANGUAGE}}. {{WEBSITE_NAME}}, a gente trabalha pelo seu trabalho.">
     {% block ogimage %}
@@ -28,6 +28,13 @@
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <script src="https://kit.fontawesome.com/8347312236.js" crossorigin="anonymous"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T2VF6PC');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
